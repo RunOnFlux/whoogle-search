@@ -91,7 +91,7 @@ RUN chown -R ${DOCKER_USER}:${DOCKER_USER} /whoogle /var/lib/tor
 # Allow writing symlinks to build dir
 RUN chown $DOCKER_USERID:$DOCKER_USERID app/static/build
 
-USER $DOCKER_USER:$DOCKER_USER
+USER root:root
 
 EXPOSE $EXPOSE_PORT
 
