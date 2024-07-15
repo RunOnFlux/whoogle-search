@@ -27,7 +27,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 
 dot_env_path = (
     os.path.join(os.path.dirname(os.path.abspath(__file__)),
-    '../whoogle.env'))
+    '/config/whoogle.env'))
 
 # Load .env file if enabled
 if os.path.exists(dot_env_path):
